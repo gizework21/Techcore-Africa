@@ -1,6 +1,8 @@
 import HeroSection from "./pages/HeroSection"
+import SalesChart from "./pages/SalesChart"
 import StepsSection from "./pages/StepSection"
 import Cards from "./pages/cards"
+import Travel from "./pages/Travel"
 function App() {
 
   return (
@@ -9,6 +11,10 @@ function App() {
      <HeroSection /> 
      <StepsSection />
      <Cards />
+
+     <Travel />
+
+     <SalesChart />
       </div>
   </>
   )

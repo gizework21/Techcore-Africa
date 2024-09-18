@@ -2,7 +2,7 @@ import React from 'react';
 
 const FlightSearchCard = () => {
   return (
-    <div className="w-[586px] h-[286px] bg-[#F0F6FC] rounded-[16px] shadow-lg p-[24px_0px_24px_24px] ml-8">
+    <div className="w-[586px] h-[250px] bg-[#F0F6FC] rounded-[16px] shadow-lg p-[24px_0px_24px_24px] ml-8">
       {/* Top Row */}
     
 
