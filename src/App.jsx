@@ -3,6 +3,8 @@ import SalesChart from "./pages/SalesChart"
 import StepsSection from "./pages/StepSection"
 import Cards from "./pages/cards"
 import Travel from "./pages/Travel"
+import EarnMoney from "./pages/EarnMoney"
+
 function App() {
 
   return (
@@ -15,6 +17,7 @@ function App() {
      <Travel />
 
      <SalesChart />
+     <EarnMoney />
       </div>
   </>
   )
