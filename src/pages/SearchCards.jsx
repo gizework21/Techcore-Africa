@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaClock, FaPlane } from 'react-icons/fa';
 
 const FlightSearchCard = () => {
   return (
@@ -12,17 +13,29 @@ const FlightSearchCard = () => {
       </div>
 
       {/* Flight Time and Details */}
-      <div className="bg-white p-4  shadow-md mb-6">
-        <div className="flex items-center">
+      <div className="bg-white p-4  shadow-md mb-6 ">
+        <div className="flex justify-end">
           <span className="text-2xl font-bold">10:30</span>
-          <span className="ml-4 text-gray-600">Murtala Muhammed (LOS) Lagos</span>
+          <div className="flex">
+            <span className="border-2 border-gray-300 w-2 h-2 rounded-full  self-center"></span>
+            <span className="border-2 border-gray-300 w-6  self-center"></span>
+            <div className="flex justify-center items-center bg-gray-100 rounded-full p-1 w-fit">
+              <FaPlane className="text-blue-500 mr-1" />
+              <p className="text-blue-500 truncate">1 stop</p>
+            </div>
+            <span className="border-2 border-gray-300 w-6  self-center"></span>
+            <span className="border-2 border-gray-300 w-2 h-2 rounded-full  self-center"></span>
+          </div>
         </div>
+
+       
+
         <div className="flex justify-between items-center mt-2">
-          <span className="text-blue-500">1 stop</span>
-          <span className="text-gray-500 text-sm flex items-center">
-            <i className="material-icons text-xs mr-1">schedule</i>
-            12h 14m
-          </span>
+          <span className="text-[#818083] text-[12px]">Murtala Muhammed (LOS) Lagos</span>
+          <div className="flex justify-center items-center mt-1">
+            <FaClock className="text-black mr-1 " />
+            <p className="text-sm text-black">12h 14m</p>
+          </div>
         </div>
       </div>
 
