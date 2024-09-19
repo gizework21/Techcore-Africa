@@ -57,7 +57,7 @@ const Home = () => {
         ))}
         {hotels.map((hotel, index) =>(
           <RoomCard
-            image={hotel?.image}
+            images={hotel?.image}
             title={hotel?.title}
             rating={hotel?.rating}
           />
