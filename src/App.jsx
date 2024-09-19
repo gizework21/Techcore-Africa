@@ -4,6 +4,7 @@ import StepsSection from "./pages/StepSection"
 import Cards from "./pages/cards"
 import Travel from "./pages/Travel"
 import EarnMoney from "./pages/EarnMoney"
+import EasyMoney from "./pages/EasyMoney"
 
 function App() {
 
@@ -14,10 +15,11 @@ function App() {
      <StepsSection />
      <Cards />
 
-     <Travel />
+     {/* <Travel /> */}
 
-     <SalesChart />
-     <EarnMoney />
+     {/* <SalesChart /> */}
+     {/* <EarnMoney /> */}
+     <EasyMoney />
       </div>
   </>
   )

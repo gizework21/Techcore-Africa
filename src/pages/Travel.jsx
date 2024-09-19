@@ -35,7 +35,7 @@ const Navbar = () => {
 // Custom Section (Text + Image on Left Side)
 const CustomSection = () => {
   return (
-    <div className="h-full flex items-center justify-center bg-white">
+    <div className="h-full flex items-center justify-center ">
       <div className="w-full p-6">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
           Customize every content on your website
@@ -54,8 +54,8 @@ const App = () => {
   return (
     <div className="min-h-screen p-8">
       <div className="flex h-screen">
-        {/* Left Section (Custom Section) */}
-        <div className="w-1/2">
+        {/* Left Section (Custom Section) */} 
+        <div className="w-1/2 bg-[#F8F8F8]">
           <CustomSection />
         </div>
 
@@ -79,7 +79,7 @@ const App = () => {
 
           {/* Second Row (5 Buttons) */}
           <div className="grid grid-cols-5 gap-4 mb-4">
-            <button className="bg-blue-600 text-[#2E2E32] font-semibold px-4 py-2  rounded-[8px] shadow  hover:bg-blue-600  hover:text-white h-[46px] w-[126px] ml-4">
+            <button className="bg-blue-600 text-white font-semibold px-4 py-2  rounded-[8px] shadow  hover:bg-blue-600  hover:text-white h-[46px] w-[126px] ml-4">
               Navigation
             </button>
             <button className="bg-white text-[#2E2E32] font-semibold px-4 py-2  rounded-[8px] shadow  hover:bg-blue-600 hover:text-white h-[46px] w-[92px] ml-8">

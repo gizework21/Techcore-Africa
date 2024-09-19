@@ -16,7 +16,7 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <div className="bg-gray-200 p-6 ">
+        <div className="bg-[#E7F6FF] p-6 ">
           <FlightInfo />
           <TourCard
             image="https://farm8.staticflickr.com/7377/9359257263_81b080a039_z_d.jpg"
