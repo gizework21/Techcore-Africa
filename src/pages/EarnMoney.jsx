@@ -32,7 +32,7 @@ const Home = () => {
 
 
   return (
-    <div className="grid grid-cols-2 gap-4 p-24 mt-32">
+    <div className="grid grid-cols-2 gap-4 p-24 -mt-8">
       <div className=" flex flex-col align-middle justify-center">
         <h1 className="font-bold text-2xl antialiased">Earn more money</h1>
         <p className=" text-gray-400 w-full">

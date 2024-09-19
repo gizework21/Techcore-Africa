@@ -2,6 +2,7 @@ import React from 'react'
 import EarnMoney from "./EarnMoney"
 import Travel from "./Travel"
 import SalesChart from "./SalesChart"
+import Footer from "./Footer"
 
 function EasyMoney() {
   return (
@@ -11,6 +12,7 @@ function EasyMoney() {
     <Travel />
     <SalesChart />  
     <EarnMoney />
+    <Footer />
     </div>
     </>
   )
