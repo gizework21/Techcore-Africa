@@ -47,8 +47,10 @@ const BarChartCard = () => {
   };
 
   return (
-    <div className="w-[584px] h-auto bg-white  border-gray-200 rounded-lg  p-4">
-      <Bar data={data} options={options} />
+    <div className="w-[584px] h-[475px] bg-[#E7F6FF] border-gray-200 rounded-lg py-8 ">
+      <div className="bg-[#F8F8F8] p-4 rounded-lg h-[411px] ml-[14px]">
+        <Bar data={data} options={options} />
+      </div>
     </div>
   );
 };
