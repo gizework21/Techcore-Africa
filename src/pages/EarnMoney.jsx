@@ -1,10 +1,37 @@
-
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FlightInfo from "../components/FlightInfo";
 import TourCard from "../components/TourCard";
 import RoomCard from "../components/RoomCard";
 
 const Home = () => {
+  const [tours, setTours] = useState([]);
+  const [rooms, setRooms] = useState([]);
+  const [hotels, setHotels] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+
+        // Replace with your actual API endpoint for tours and rooms
+        const toursResponse = await fetch("/data/tours.json");
+        const hotelsResponse = await fetch("/data/hotels.json");
+        
+        const toursData = await toursResponse.json(); 
+        const hotelsData = await hotelsResponse.json(); 
+
+        setTours(toursData);
+        setHotels(hotelsData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+
+
+
   return (
     <div className="grid grid-cols-2 gap-4 p-24">
       <div className=" flex flex-col align-middle justify-center">
@@ -18,18 +45,20 @@ const Home = () => {
       <div>
         <div className="bg-[#E7F6FF] p-6 ">
           <FlightInfo />
+          {tours.map((tour, index) => (
           <TourCard
-            image="https://farm8.staticflickr.com/7377/9359257263_81b080a039_z_d.jpg"
-            title="Official National Gallery Highlights Guided Tour"
-            refundable={true}
-            mobileVoucher={true}
-            rating="4.5/5"
-            reviews="532"
+          images={tour.image} // Pass the images array
+          title={tour.title}
+          refundable={tour.refundable}
+          mobileVoucher={tour.mobileVoucher}
+          rating={tour.rating}
+          reviews={tour.reviews}
           />
+        ))}
           <RoomCard
-            image="https://farm8.staticflickr.com/7377/9359257263_81b080a039_z_d.jpg"
-            title="Room two, 2 Twin Beds (Runway View, High Floor)"
-            rating="8.7/10 Wonderful"
+            image={hotels[0]?.image}
+            title={hotels[0]?.title}
+            rating={hotels[0]?.rating}
           />
         </div>
       </div>
