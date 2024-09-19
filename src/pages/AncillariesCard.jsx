@@ -11,18 +11,18 @@ const FlightBookingCard = () => {
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center">
             {/* Airline Logo */}
+            <span className="text-gray-700 font-bold">VS 411</span>
             <img
               src="https://1000logos.net/wp-content/uploads/2020/04/Turkish-Airlines-symbol.png"
               alt="Airline Logo"
               className="w-6 h-6 mr-2 rounded-lg"
             />
-            <span className="text-gray-700 font-bold">VS 411</span>
-            <span className="text-gray-700 ml-2 font-bold">LOS-LHR</span>
+            <span className='h-3 w-24 bg-gray-200 rounded-full ml-3'></span>
+            <span className='h-3 w-16 bg-gray-200 rounded-full ml-3'></span>
+            <span className='h-3 w-4 bg-gray-200 rounded-full ml-1'></span>
+            <span className='h-3 w-14 bg-gray-200 rounded-full ml-1'></span>
           </div>
-          <div className="text-sm text-gray-700 ">
-            <span>10:30PM - 05:25PM +1</span>
-          </div>
-          <span className="text-gray-700 font-bold">06:55</span>
+       
         </div>
       </div>
 
@@ -54,10 +54,10 @@ const FlightBookingCard = () => {
 
       {/* Booking Section */}
       <div className="text-left">
-        <h3 className="text-xl font-semibold">Book</h3>
+        <h3 className="text-xl font-semibold">Ancillaries</h3>
         <p className="text-gray-500 mt-2">
-          Capture all relevant details from your customer in a one-step
-          checkout.
+        Let your customers book premium sears
+         and pay for additional baggage.
         </p>
       </div>
     </div>

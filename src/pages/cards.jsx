@@ -3,6 +3,7 @@ import Book from "./book";
 import SearchCards from "./SearchCards";
 import PaymentCard from "./paymentCard";
 import OrdermanagementCard from "./ordermangementCard";
+import AncillariesCard from "./AncillariesCard"
 
 function cards() {
   return (
@@ -13,7 +14,7 @@ function cards() {
       <div className="grid gap-x-0 gap-y-4 grid-cols-3">
         <SearchCards />
         <Book />
-        <Book />
+        <AncillariesCard />
       </div>
       <div className="grid  gap-y-4 grid-cols-2 mt-5 text-center">
         <PaymentCard />
