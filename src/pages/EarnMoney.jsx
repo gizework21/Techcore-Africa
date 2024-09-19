@@ -5,7 +5,6 @@ import RoomCard from "../components/RoomCard";
 
 const Home = () => {
   const [tours, setTours] = useState([]);
-  const [rooms, setRooms] = useState([]);
   const [hotels, setHotels] = useState([]);
 
   useEffect(() => {
