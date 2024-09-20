@@ -1,25 +1,28 @@
-import React from "react";
+import Image from "../assets/svg/order.svg";
 
 const FlightSearchCard = () => {
   return (
-    <div className="w-[586px] h-[250px] bg-[#F0F6FC] rounded-[16px] shadow-lg p-[24px_0px_24px_24px] ml-8">
+    <div className="bg-[#F0F6FC] rounded-[16px] shadow-lg py-6 pl-6 w-full mt-4">
       {/* Top Row */}
 
       {/* Flight Time and Details */}
-      <div className="bg-white w-[562px] h-[113px] shadow-md mb-6 justify-center">
-        <div className="flex items-center pt-8">
+      <div className="bg-white shadow-md mb-6 p-2">
+        <p className="text-[14px] text-textBlack">Order</p>
+
+        <div className="flex items-center  justify-between gap-2 py-3">
           <img
-            src="https://1000logos.net/wp-content/uploads/2020/04/Turkish-Airlines-symbol.png"
+            src={Image}
             alt="Airline Logo"
-            className="w-6 h-6 mr-2  rounded-lg"
+            className="w-[40px]  rounded-lg"
           />
-          <span className="-ml-2 text-gray-950 font-bold text-[15px]">
-          00:10 - 06:40
+          <span className=" text-textBlack font-[700] text-[16px]">
+            00:10 - 06:40
           </span>
-          <span className="ml-3 text-gray-500 font-bold text-[17px]">
-          TK490390, AP109302 | ₦8,500,400
+          <span className="text-[#818083] font-[700] text-[16px]">
+            TK490390, AP109302 |{" "}
+            <span className="text-[12px]"> ₦8,500,400</span>
           </span>
-          <button className="bg-[#1E61DC] p-[6px] rounded-md w-[109px] text-white ml-12">
+          <button className="bg-[#1E61DC] p-[6px] rounded-md w-[109px] text-white">
             Issue Ticket
           </button>
         </div>
@@ -29,7 +32,7 @@ const FlightSearchCard = () => {
       <div className="text-left">
         <h3 className="text-xl font-sans font-bold">Order Management</h3>
         <p className="text-blue-600 mt-2">
-      <a href="#">   Register interest today... </a>
+          <a href="#"> Register interest today... </a>
         </p>
       </div>
     </div>

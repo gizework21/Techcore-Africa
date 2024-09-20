@@ -1,18 +1,25 @@
-import React, { useState } from 'react';
-import { FaMapMarkerAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaMapMarkerAlt, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const TourCard = ({ images, title, refundable, mobileVoucher, rating, reviews }) => {
+const TourCard = ({
+  images,
+  title,
+  refundable,
+  mobileVoucher,
+  rating,
+  reviews,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  console.log(images)
+  console.log(images);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => 
-      (prevIndex - 1 + images.length) % images.length
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
   };
 
@@ -26,30 +33,46 @@ const TourCard = ({ images, title, refundable, mobileVoucher, rating, reviews })
             className="rounded-lg h-[190px] w-full object-cover"
           />
           <div className="absolute top-1/2 transform -translate-y-1/2 left-0 p-2">
-            <button className="bg-gray-300 rounded-full p-1" onClick={handlePrev}>
+            <button
+              className="bg-gray-300 rounded-full p-1"
+              onClick={handlePrev}
+            >
               <FaChevronLeft className="text-xl" />
             </button>
           </div>
           <div className="absolute top-1/2 transform -translate-y-1/2 right-0 p-2">
-            <button className="bg-gray-300 rounded-full p-1" onClick={handleNext}>
+            <button
+              className="bg-gray-300 rounded-full p-1"
+              onClick={handleNext}
+            >
               <FaChevronRight className="text-xl" />
             </button>
           </div>
         </div>
-        
-        <div className="w-3/4 flex flex-col">
+
+        <div className="flex flex-col">
           <div className="flex flex-col items-start">
-            <span className="bg-green-500 text-black font-semibold px-2 py-1 rounded-lg">Marked up</span>
+            <span className="bg-green-500 text-black font-semibold px-2 py-1 rounded-lg">
+              Marked up
+            </span>
             <p className="text-lg font-bold">{title}</p>
           </div>
           <div className="flex flex-col items-start my-1">
-            <div className='flex my-2 items-center'>
+            <div className="flex my-2 items-center">
               <FaMapMarkerAlt className="text-green-300 text-xl" />
-              <span className='h-3 w-24 bg-gray-200 rounded-full ml-3'></span>
+              <span className="h-3 w-24 bg-gray-200 rounded-full ml-3"></span>
             </div>
-            <div className='flex gap-4'>
-              {refundable && <span className="bg-gray-200 text-black font-bold p-1 rounded-lg">Refundable Ticket</span>}
-              {mobileVoucher && <span className="bg-gray-200 text-black font-bold p-1 rounded-lg">Mobile Voucher</span>}
+            <div className="flex gap-4">
+              {refundable && (
+                <span className="bg-gray-200 text-black font-bold p-1 rounded-lg">
+                  Refundable Ticket
+                </span>
+              )}
+              {mobileVoucher && (
+                <span className="bg-gray-200 text-black font-bold p-1 rounded-lg">
+                  Mobile Voucher
+                </span>
+              )}
             </div>
           </div>
           <div className="flex items-center">

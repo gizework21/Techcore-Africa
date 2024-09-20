@@ -1,28 +1,25 @@
-import HeroSection from "./pages/HeroSection"
-import SalesChart from "./pages/SalesChart"
-import StepsSection from "./pages/StepSection"
-import Cards from "./pages/cards"
-import Travel from "./pages/Travel"
-import EarnMoney from "./pages/EarnMoney"
-import EarnMoneySection from "./pages/EasyMoney"
+import HeroSection from "./pages/HeroSection";
+
+import StepsSection from "./pages/StepSection";
+import Cards from "./pages/cards";
+import EarnMoneySection from "./pages/EasyMoney";
 
 function App() {
-
   return (
-    <>
-      <div>
-     <HeroSection /> 
-     <StepsSection />
-     <Cards />
+    <div className="flex flex-col items-center w-screen">
+      <HeroSection />
+      <div className="container flex flex-col items-center justify-center">
+        <StepsSection />
+        <Cards />
 
-     {/* <Travel /> */}
+        {/* <Travel /> */}
 
-     {/* <SalesChart /> */}
-     {/* <EarnMoney /> */}
-     <EarnMoneySection />
+        {/* <SalesChart /> */}
+        {/* <EarnMoney /> */}
+        <EarnMoneySection />
       </div>
-  </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

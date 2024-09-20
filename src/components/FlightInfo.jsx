@@ -8,9 +8,7 @@ const FlightInfo = () => {
       <div className="top flex justify-between gap-12 items-center">
         <div className="flex items-center">
           <p className="text-md font-medium">DEPARTURE</p>
-          <span className="text-md text-gray-400 font-semibold m-4">
-            .
-          </span>
+          <span className="text-md text-gray-400 font-semibold m-4">.</span>
           <p className="text-md text-gray-400">Turkish Airline</p>
           <p className="bg-blue-100 text-blue-600 text-sm font-semibold px-2 m-3 rounded-lg">
             AMADEUS
@@ -46,7 +44,12 @@ const FlightInfo = () => {
           </div>
         </div>
         <div className="flex flex-col items-start">
-          <p className="text-2xl font-bold">06:30<span className="align-super text-sm text-blue-500 font-extra-light">+1 day</span></p>
+          <p className="text-2xl font-bold">
+            06:30
+            <span className="align-super text-sm text-blue-500 font-extra-light">
+              +1 day
+            </span>
+          </p>
           <p className="text-sm text-gray-500">London Heathrow (LHR)</p>
           <p className="text-sm text-gray-500">London</p>
         </div>

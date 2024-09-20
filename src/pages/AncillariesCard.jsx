@@ -1,63 +1,42 @@
-import React from "react";
-import { FaClock, FaPlane } from "react-icons/fa";
-import Main from "../../public/main.PNG";
+import CardImg from "../assets/svg/card.svg";
 
 const FlightBookingCard = () => {
   return (
-    <div className="w-[381.33px] h-[286px] bg-blue-50 rounded-[16px] shadow-lg p-[24px_0px_24px_24px] mx-auto">
+    <div className=" bg-[#F0F6FC] rounded-[16px] shadow-lg py-6 pl-6 mx-auto">
       {/* Flight Information */}
-      <div className="bg-[#E7F6FF] p-1  shadow-md mb-6 -mt-1">
+      <div className="bg-[#E7F6FF]  shadow-md ">
         {/* Airline and Flight Route */}
-        <div className="flex justify-between items-center mb-4">
-          <div className="flex items-center">
+        <div className="items-center p-2 font-[700] text-[12px]">
+          <div className="flex items-center justify-between">
             {/* Airline Logo */}
-            <span className="text-gray-700 font-bold">VS 411</span>
+            <div className="bg-btnBlue text-white rounded-[2px] px-1">
+              Select Seat
+            </div>
+            <span>VS 411</span>
             <img
               src="https://1000logos.net/wp-content/uploads/2020/04/Turkish-Airlines-symbol.png"
               alt="Airline Logo"
-              className="w-6 h-6 mr-2 rounded-lg"
+              className="size-[15px] rounded-lg object-cover"
             />
-            <span className='h-3 w-24 bg-gray-200 rounded-full ml-3'></span>
-            <span className='h-3 w-16 bg-gray-200 rounded-full ml-3'></span>
-            <span className='h-3 w-4 bg-gray-200 rounded-full ml-1'></span>
-            <span className='h-3 w-14 bg-gray-200 rounded-full ml-1'></span>
-          </div>
-       
-        </div>
-      </div>
-
-      <div className="bg-white p-3 -mt-6  shadow-md mb-6 ">
-        <div className="flex justify-end">
-          <span className="text-2xl font-bold">10:30</span>
-          <div className="flex">
-            <span className="border-2 border-gray-300 w-2 h-2 rounded-full  self-center"></span>
-            <span className="border-2 border-gray-300 w-6  self-center"></span>
-            <div className="flex justify-center items-center bg-gray-100 rounded-full p-1 w-fit">
-              <FaPlane className="text-blue-500 mr-1" />
-              <p className="text-blue-500 truncate">1 stop</p>
-            </div>
-            <span className="border-2 border-gray-300 w-6  self-center"></span>
-            <span className="border-2 border-gray-300 w-2 h-2 rounded-full  self-center"></span>
-          </div>
-        </div>
-
-        <div className="flex justify-between items-center mt-2">
-          <span className="text-[#818083] text-[12px]">
-            Murtala Muhammed (LOS) Lagos
-          </span>
-          <div className="flex justify-center items-center mt-1">
-            <FaClock className="text-black mr-1 " />
-            <p className="text-sm text-black">12h 14m</p>
+            <span className="h-3 w-[70px] bg-[#D6DEE6] rounded-full ml-3"></span>
+            <span className="h-3 w-[40px] bg-[#D6DEE6] rounded-full ml-3"></span>
+            <span className="h-3 w-[20px] bg-[#D6DEE6] rounded-full ml-1"></span>
+            <span className="h-3 w-[40px] bg-[#D6DEE6] rounded-full ml-1"></span>
           </div>
         </div>
       </div>
+
+      <img
+        src={CardImg}
+        alt="card"
+        className="w-full object-cover bg-white py-3 shadow-md mb-6"
+      />
 
       {/* Booking Section */}
       <div className="text-left">
         <h3 className="text-xl font-semibold">Ancillaries</h3>
         <p className="text-gray-500 mt-2">
-        Let your customers book premium sears
-         and pay for additional baggage.
+          Let your customers book premium sears and pay for additional baggage.
         </p>
       </div>
     </div>
