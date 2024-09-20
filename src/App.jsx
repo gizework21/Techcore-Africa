@@ -6,6 +6,7 @@ import EarnMoneySection from "./pages/EasyMoney";
 
 function App() {
   return (
+      <div className="overflow-x-hidden">
     <div className="flex flex-col items-center w-screen">
       <HeroSection />
       <div className="container flex flex-col items-center justify-center">
@@ -13,6 +14,7 @@ function App() {
         <Cards />
         <EarnMoneySection />
       </div>
+    </div>
     </div>
   );
 }

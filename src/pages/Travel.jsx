@@ -88,7 +88,7 @@ const App = () => {
       <div className="md:p-6 bg-[#E7F6FF] rounded flex flex-col items-center">
         <div className="space-y-6 py-4">
           {/* Navigation Buttons */}
-          <div className="flex w-full justify-center flex-wrap items-center gap-2 md:gap-6 ">
+          <div className="flex w-full justify-center flex-wrap items-center gap-3 md:gap-6 ">
             {btns.map((btn) => (
               <Button
                 isActive={btn.isActive}
@@ -97,7 +97,7 @@ const App = () => {
               />
             ))}
           </div>
-          <div className="flex w-full justify-center flex-wrap items-center gap-2 md:gap-6 ">
+          <div className="flex w-full justify-center flex-wrap items-center gap-0 md:gap-6 ">
             {btns2.map((btn) => (
               <Button
                 isActive={btn.isActive}

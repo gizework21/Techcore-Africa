@@ -11,7 +11,7 @@ function EasyMoney() {
       </p>
       <Travel />
       <SalesChart />
-      <div className="hidden md:block">
+      <div className="  ">
         <EarnMoney />
       </div>
       <Footer />

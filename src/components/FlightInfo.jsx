@@ -14,7 +14,7 @@ const FlightInfo = () => {
             AMADEUS
           </p>
         </div>
-        <button className="bg-green-500 text-black text-md font-semibold p-1 rounded-lg float-end">
+        <button className="bg-green-500 text-black text-md font-semibold p-1 rounded-lg float-end w-[30px] truncate">
           Earn Commission
         </button>
       </div>
