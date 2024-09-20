@@ -11,11 +11,6 @@ function App() {
       <div className="container flex flex-col items-center justify-center">
         <StepsSection />
         <Cards />
-
-        {/* <Travel /> */}
-
-        {/* <SalesChart /> */}
-        {/* <EarnMoney /> */}
         <EarnMoneySection />
       </div>
     </div>
