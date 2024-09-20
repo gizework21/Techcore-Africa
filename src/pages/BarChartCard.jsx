@@ -46,8 +46,8 @@ const BarChartCard = () => {
   };
 
   return (
-    <div className="md:h-[475px] md:bg-[#E7F6FF] border-gray-200 rounded-lg py-8 ">
-      <div className="bg-[#F8F8F8] rounded-lg md:h-[411px]">
+    <div className="md:h-[475px] w-[420px] md:w-[580px] md:bg-[#E7F6FF] border-gray-200 rounded-lg py-8 md:pl-[30px]">
+      <div className="bg-[#F8F8F8] rounded-lg md:h-[411px] w-[380px] md:w-[550px]">
         <Bar data={data} options={options} />
       </div>
     </div>

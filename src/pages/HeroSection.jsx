@@ -2,7 +2,7 @@ import ImageWeb from "../assets/image.PNG";
 
 const HeroSection = () => {
   return (
-    <div className="bg-black text-white w-full h-[90dvh] flex flex-col">
+    <div className="bg-black text-white w-full h-[130dvh] flex flex-col">
       <div className="h-full flex items-center">
         <div className="container mx-auto text-center space-y-[16px]">
           <h1

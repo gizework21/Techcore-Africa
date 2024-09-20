@@ -1,6 +1,6 @@
 const ContactSection = () => {
   return (
-    <div className=" bg-lightBlue rounded-lg flex flex-col md:flex-row gap-4 justify-between items-center shadow-lg p-2 md:p-[60px]">
+    <div className=" bg-lightBlue rounded-lg flex flex-col md:flex-row gap-4 justify-between items-center shadow-lg p-2 md:p-[50px] md:my-12">
       <div>
         <h2 className="text-2xl font-bold mb-2">Get your website today!</h2>
         <p className="text-gray-500">

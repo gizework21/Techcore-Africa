@@ -28,7 +28,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between px-2">
+    <div className="flex flex-col lg:flex-row justify-between px-2 md:my-6">
       <div className=" flex flex-col align-middle justify-center max-w-sm">
         <h1 className="font-bold text-2xl antialiased">Earn more money</h1>
         <p className=" text-gray-400 w-full">
@@ -38,7 +38,7 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <div className="bg-[#E7F6FF]">
+        <div className="bg-[#E7F6FF] md:p-5 rounded-md ">
           <FlightInfo />
           {tours.map((tour, index) => (
             <TourCard
