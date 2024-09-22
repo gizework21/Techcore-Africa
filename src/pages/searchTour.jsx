@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
-// Define a function or map to get a color for each tag
 const tagColors = [
   'bg-blue-200', 'bg-green-200', 'bg-red-200', 'bg-yellow-200', 
   'bg-purple-200', 'bg-pink-200', 'bg-indigo-200', 'bg-orange-200',
@@ -9,7 +8,6 @@ const tagColors = [
 ];
 
 function getColorForTag(tagId) {
-  // Use tagId to generate a stable index within the range of available colors
   return tagColors[tagId % tagColors.length];
 }
 
@@ -103,7 +101,7 @@ const AutocompleteSearch = () => {
             <p className='text-[#818083] text-[14px]'>When</p>
             <input
           type="date"
-          className="border -mt-2 border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="border -mt-2 border-gray-300 p-2 max-sm:w-[400px] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
